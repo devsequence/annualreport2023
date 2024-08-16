@@ -1,0 +1,19 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff2") format("woff2");
+    *font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+@include font("Signifier-Regular-Italic", "signifier-regular-italic", "400", "italic");
+@include font("Signifier-Regular", "signifier-regular", "400", "normal");
+@include font("Signifier-Medium", "signifier-medium", "500", "normal");
+@include font("Signifier-Medium", "signifier-medium", "500", "normal");
+@include font("Railroad-Gothic-ATF", "Railroad-Gothic-ATF", "400", "normal");
+@include font("Founders-Grotesk-Medium", "Founders-Grotesk-Medium", "500", "normal");
+@include font("Founders-Grotesk-Light", "Founders-Grotesk-Light", "300", "normal");
+@include font("Founders-Grotesk-Italic", "Founders-Grotesk-Italic", "400", "Italic");
+@include font("Founders-Grotesk", "Founders-Grotesk", "400", "normal");
+
