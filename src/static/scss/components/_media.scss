@@ -1,5 +1,11 @@
 
   @media screen and (max-width: 1500px){
+    .popup-video{
+
+       video{
+         width: 100%;
+       }
+    }
     #section3{
       .community-hero__top{
         span{
@@ -86,13 +92,19 @@
     }
     .item-block{
       &.black {
+        .item-sticky{
+          top: calc(10vh - 27rem);
+        }
         .item-block__sticky{
           padding: 0 10rem 0;
           top: 210rem;
         }
         .banner-image {
+          min-height: 50vh;
           .container{
-            justify-content: center;
+            min-height: 50vh;
+            justify-content: start;
+            padding: 100rem 16rem 0;
           }
         }
       }
@@ -185,11 +197,11 @@
            }
          }
         span{
-          font: 400 24rem/90% $font-Signifier-Regular-Italic;
+          font: 400 24rem/normal $font-Signifier-Regular-Italic;
         }
         .header-nav__donate{
           padding-left: 50rem;
-          font: 400 34rem / 90% $font-Railroad-Gothic-ATF;
+          font: 400 34rem / normal $font-Railroad-Gothic-ATF;
           &:before{
             width: 65rem;
             height: 44rem;
@@ -265,16 +277,16 @@
           line-height: 100%;
           left: 92rem;
           top: 325rem;
-          font: 400 76rem / 90% $font-Railroad-Gothic-ATF;
+          font: 400 76rem / normal $font-Railroad-Gothic-ATF;
         }
         &:nth-of-type(3){
           line-height: 100%;
           left: 80rem;
           top: 385rem;
-          font: 500 92rem / 90% $font-Founders-Grotesk-Medium;
+          font: 500 92rem / normal $font-Founders-Grotesk-Medium;
         }
         &:nth-of-type(4){
-          font: 400 88rem / 90% $font-Signifier-Regular;
+          font: 400 88rem / normal $font-Signifier-Regular;
           line-height: 100%;
           left: 20rem;
           top: 464rem;
@@ -287,7 +299,7 @@
     }
     .hero-donate__btn{
       padding: 10rem 10rem 10rem 44rem;
-      font: 400 38rem / 90% $font-Railroad-Gothic-ATF;
+      font: 400 38rem / normal $font-Railroad-Gothic-ATF;
       &:before{
         left: 8rem;
         top: 15rem;
@@ -297,18 +309,19 @@
     }
     .mission{
       &-title{
-        font: 400 24rem / 90% $font-Signifier-Regular;
+        font: 400 24rem / normal $font-Signifier-Regular;
       }
       &-item{
         height: auto;
         display: flex;
+        margin-bottom: 50rem;
         align-items: center;
         span{
           color: $white-100;
           font: 400 24rem / 110% $font-Signifier-Regular;
           padding-left: 0;
           display: block;
-          margin-top: 10rem;
+          margin-top: 40rem;
         }
         &:nth-of-type(1){
           justify-content: flex-end;
@@ -329,6 +342,7 @@
       &-list{
         &__item{
           padding-left: 50rem;
+          margin-bottom: 50rem;
         }
         &__title{
           font: 400 32rem / 110% $font-Railroad-Gothic-ATF;
@@ -341,7 +355,7 @@
         }
       }
       &-number{
-        font:  400 55rem / 90% $font-Railroad-Gothic-ATF;
+        font:  400 55rem / normal $font-Railroad-Gothic-ATF;
       }
       &-wrap{
           margin: 160rem 0 0 0;
@@ -354,7 +368,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      z-index: 1;
       .sub-title{
         top: -35rem;
         left: 16rem;
@@ -363,7 +376,7 @@
       &-hero{
         &__title{
           overflow: hidden;
-          font: 400 80rem/90% $font-Railroad-Gothic-ATF;
+          font: 400 80rem/ normal $font-Railroad-Gothic-ATF;
           span{
             overflow: visible;
           }
@@ -429,6 +442,18 @@
         display: block;
       }
     }
+    #section2{
+      .community-hero__title{
+        span{
+          &:nth-of-type(1){
+            overflow: hidden;
+          }
+          &:nth-of-type(2){
+            max-height: 100%;
+          }
+        }
+      }
+    }
     .drop-whale, .drop-inner{
       border-width: 2rem ;
     }
@@ -443,7 +468,7 @@
       flex-direction: column;
     }
     .title-section{
-      font: 400 50rem / 100% $font-Railroad-Gothic-ATF;
+      font: 400 50rem / normal $font-Railroad-Gothic-ATF;
     }
     .text-section{
       font: 400 16rem / 130% $font-Signifier-Regular;
@@ -474,12 +499,12 @@
         &:nth-of-type(1){
           padding: 3rem 7rem 5rem 7rem;
           height: 32rem;
-          font: 500 24rem/100% $font-Founders-Grotesk-Medium;
+          font: 500 24rem/normal $font-Founders-Grotesk-Medium;
         }
         &:nth-of-type(2){
           padding: 3rem 7rem 5rem;
           height: 18rem;
-          font: 500 24rem/100% $font-Signifier-Medium;
+          font: 500 24rem/normal $font-Signifier-Medium;
         }
       }
     }
@@ -493,6 +518,7 @@
           &:nth-of-type(1){
             width: 60%;
             margin: 0 auto;
+            height: 180rem;
           }
           &:nth-of-type(2){
             width: 40%;
@@ -522,7 +548,7 @@
       padding: 75rem 0 ;
     }
     .banner-desc{
-      font: 400 16rem/100% $font-Signifier-Regular;
+      font: 400 16rem/normal $font-Signifier-Regular;
     }
     .banner-image {
       &.gray{
@@ -533,7 +559,7 @@
       }
     }
     .banner-image.gradient .banner-desc{
-      font: 400 16rem/100% $font-Signifier-Regular;
+      font: 400 16rem/normal $font-Signifier-Regular;
     }
     .banner-image.light{
       .banner-media__image {
@@ -550,7 +576,7 @@
       display: none;
     }
     .parallax-bottom img {
-      height: 660rem;
+      height: 710rem;
       }
     #section4{
       .community-hero__title{
@@ -663,13 +689,13 @@
       }
     }
     .list-item__desc {
-      font: 500 18rem/100% $font-Signifier-Medium;
+      font: 500 18rem/normal $font-Signifier-Medium;
       a{
-        font: 500 18rem/100% $font-Signifier-Medium;
+        font: 500 18rem/normal $font-Signifier-Medium;
       }
     }
     .list-item__text{
-      font: 300 16rem/100% $font-Founders-Grotesk-Light;
+      font: 300 16rem/normal $font-Founders-Grotesk-Light;
     }
     .section-hero__media{
       video{
@@ -691,24 +717,25 @@
     .hero-banner-titles{
       span{
         &:nth-of-type(1){
-          font: 400 56rem/90% $font-Railroad-Gothic-ATF;
+          font: 400 56rem/normal $font-Railroad-Gothic-ATF;
           margin-left: 70rem;
         }
         &:nth-of-type(2){
-          font: 500 68rem/100% $font-Founders-Grotesk-Medium;
+          font: 500 68rem/normal $font-Founders-Grotesk-Medium;
           margin-left: 105rem;
+          letter-spacing: -4rem;
         }
         &:nth-of-type(3){
-          font: 400 68rem/100% $font-Signifier-Regular;
+          font: 400 68rem/normal $font-Signifier-Regular;
           margin-left: 0;
         }
       }
     }
     .hero-banner-desc {
-      font: 400 32rem / 100% $font-Signifier-Regular;
+      font: 400 32rem / normal $font-Signifier-Regular;
     }
     .hero-banner-link a{
-      font: 500 32rem/100% $font-Founders-Grotesk-Medium;
+      font: 500 32rem/normal $font-Founders-Grotesk-Medium;
     }
     .black{
       .banner-image{
@@ -719,7 +746,7 @@
           }
         }
         .banner-desc{
-          font: 400 16rem/100% $font-Signifier-Regular;
+          font: 400 16rem/normal $font-Signifier-Regular;
         }
       }
 
@@ -732,7 +759,7 @@
     }
     .dark-green{
       .subtitle-section{
-        font: 400 22rem/90% $font-Railroad-Gothic-ATF;
+        font: 400 22rem/normal $font-Railroad-Gothic-ATF;
       }
 
     }
@@ -756,10 +783,10 @@
       top: 35rem;
     }
     .chart-container-item{
-      font: 400 10rem/110% $font-Signifier-Regular;
+      font: 400 10rem/normal $font-Signifier-Regular;
     }
     .item-block.dark-green .chart-container-item:before {
-      width: 180rem;
+      width: 200rem;
     }
     .section-hero-full .section-full-wrap{
       margin: 0;
@@ -837,6 +864,21 @@
     }
   }
   @media screen and (max-width: 480px){
+    .hero-info{
+      span{
+        &:nth-of-type(1){}
+        &:nth-of-type(2){}
+        &:nth-of-type(3){}
+        &:nth-of-type(4){
+
+        }
+      }
+    }
+    .hero-media__item{
+      &:nth-of-type(4){
+        bottom: 132rem;
+      }
+    }
     #section4 {
       .community-hero__top{
         .community-hero__title{
@@ -864,18 +906,18 @@
       left: -10rem;
     }
     .community {
-      height: 100vh;
-      min-height: 844rem;
+      height: 644rem;
+      min-height: 704rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       .sub-title{
-        top: -35rem;
+        top: -45rem;
       }
       &-hero{
         &__title{
           overflow: hidden;
-          font: 400 80rem/90% $font-Railroad-Gothic-ATF;
+          font: 400 80rem/95% $font-Railroad-Gothic-ATF;
           span{
             overflow: visible;
           }
@@ -884,15 +926,15 @@
     }
     .community-hero__top{
       margin-bottom: 0;
-      top: 147rem;
+      top: 90rem;
     }
     .community-hero__center{
       margin-bottom: 0;
-      top: 381rem;
+      top: 280rem;
     }
     .community-hero__bottom{
       margin-bottom: 0;
-      top: 661rem;
+      top: 480rem;
     }
     .community-top, .community-center, .community-bottom {
       &:after{
@@ -907,8 +949,8 @@
       }
     }
     .community-top {
-      top: 287rem;
-      height: 180rem;
+      top: 205rem;
+      height: 285rem;
       img{
         display: none;
       }
@@ -919,7 +961,7 @@
       }
     }
     .community-center {
-      top: 531rem;
+      top: 455rem;
       img{
         display: none;
       }
@@ -928,7 +970,8 @@
       }
     }
     .community-bottom {
-      top: 761rem;
+      top: auto;
+      bottom: -100rem;
       z-index: 6;
       overflow: visible;
       &:after{

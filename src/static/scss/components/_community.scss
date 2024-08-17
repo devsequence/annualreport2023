@@ -23,7 +23,8 @@
       position: relative;
       display: flex;
       align-items: center;
-      font: 400 284rem / 90% $font-Railroad-Gothic-ATF;
+      font: 500 284rem / normal $font-Railroad-Gothic-ATF-Medium;
+      letter-spacing: -6rem;
       &:nth-of-type(1){
         color: #A6E7FF;
       }
@@ -31,6 +32,7 @@
         color: #A6E7FF;
         span{
           color: #00A4FF;
+
         }
       }
       &:nth-of-type(3){
@@ -43,6 +45,7 @@
     top: 10rem;
     left: 60rem;
     font: $font-h2;
+    letter-spacing: -1rem;
     clip-path: polygon( 0% 0%,100% 0%,99.647% 54.688%,98.236% 100%,0% 100%,0% 35.938%,0% 0% );
     background: #F0C31A;
     color: #2C2A2A;
@@ -98,15 +101,13 @@
 .list{
   &-item{
     border-top: 1rem solid rgba($black-100, .5);
-    padding: 20rem 0 10rem;
+    padding: 20rem 0 60rem;
     &__logo{
       margin-bottom: 20rem;
     }
     &__desc{
       font: 500 32rem/100% $font-Signifier-Medium;
       color: $black-100;
-
-
       a{
         font: 500 32rem/100% $font-Signifier-Medium;
         color: $black-100;
@@ -191,6 +192,8 @@
   span{
     img{
       width: 100%;
+      display: inline-flex;
+      margin: -10rem 20rem 0 10rem;
     }
   }
 }
@@ -203,7 +206,7 @@
 }
 .community-top{
   position: absolute;
-  top: 240rem;
+  top: 210rem;
   left: 0;
   right: 0;
   z-index: 2;
