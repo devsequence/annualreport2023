@@ -558,7 +558,9 @@ button{
   height: 100vh;
   margin: 0 0 -100vh;
   background: linear-gradient(to top, #7A54A2 0%, #E72B7C 90%);
+  z-index: -10;
 }
+.item-block.light{z-index: 2;}
 .black{
   .banner-media__title {
     color: #2C2A2A;
