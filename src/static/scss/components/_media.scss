@@ -576,7 +576,7 @@
       display: none;
     }
     .parallax-bottom img {
-      height: 710rem;
+      height: 820rem;
       }
     #section4{
       .community-hero__title{
@@ -864,6 +864,10 @@
     }
   }
   @media screen and (max-width: 480px){
+    .item-block.light-green .banner-media__image{
+      width: 189rem;
+      height: 250rem;
+    }
     .hero-info{
       span{
         &:nth-of-type(1){}

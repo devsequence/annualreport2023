@@ -223,6 +223,15 @@ button{
   left: 0;
   right: 0;
   z-index: -1;
+  &.parallax-center-top{
+    top: -80vh;
+  }
+  &.parallax-center-center{
+    top: -90vh;
+  }
+  &.parallax-center-blue{
+    top: -35rem;
+  }
   img{
     width: 100%;
     object-fit: cover;
@@ -799,7 +808,7 @@ $wave-color: #FF5AA1;
   .section-hero-text{
     padding: 125rem 0 0;
     height: auto;
-    min-height: 80vh;
+    min-height: auto;
     .text-section{
       max-width: 760rem;
     }
